@@ -109,9 +109,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prevNode: {fileID: 8162577571701549389}
-  isFirstNode: 1
+  isFirstNode: 0
   isPointLightEn: 0
-  slowProgress: 0
+  slowProgress: 1
 --- !u!1 &8162577570841347218
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,9 +221,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prevNode: {fileID: 8162577571731557289}
-  isFirstNode: 1
+  isFirstNode: 0
   isPointLightEn: 0
-  slowProgress: 0
+  slowProgress: 1
 --- !u!1 &8162577570970023056
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,9 +333,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prevNode: {fileID: 8162577570841347216}
-  isFirstNode: 1
+  isFirstNode: 0
   isPointLightEn: 0
-  slowProgress: 0
+  slowProgress: 1
 --- !u!1 &8162577571298832595
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,9 +445,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prevNode: {fileID: 8162577570970023062}
-  isFirstNode: 1
+  isFirstNode: 0
   isPointLightEn: 0
-  slowProgress: 0
+  slowProgress: 1
 --- !u!1 &8162577571608788652
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,9 +557,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prevNode: {fileID: 8162577570038768451}
-  isFirstNode: 1
+  isFirstNode: 0
   isPointLightEn: 0
-  slowProgress: 0
+  slowProgress: 1
 --- !u!1 &8162577571701549386
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,9 +669,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prevNode: {fileID: 0}
-  isFirstNode: 1
+  isFirstNode: 0
   isPointLightEn: 0
-  slowProgress: 0
+  slowProgress: 1
 --- !u!1 &8162577571731557291
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,9 +781,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prevNode: {fileID: 8162577571608788626}
-  isFirstNode: 1
+  isFirstNode: 0
   isPointLightEn: 0
-  slowProgress: 0
+  slowProgress: 1
 --- !u!1 &8253280251575300542
 GameObject:
   m_ObjectHideFlags: 0
