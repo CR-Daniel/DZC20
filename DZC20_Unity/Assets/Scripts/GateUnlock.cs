@@ -5,20 +5,23 @@ using UnityEngine;
 public class GateUnlock : MonoBehaviour
 {
     public LEDNode node = null;
-    float smooth = 5.0f;
-    float tiltAngle = 60.0f;
+    private Quaternion open;
+    public float lerpTime = 1;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        open = new Quaternion(1f, 0f, 0f, 0f);
     }
 
     // Update is called once per frame
     void Update()
     {
         if (node.GetComponent<LEDNode>().isFirstNode == true){
-            // TODO: Move Gate
+            transform.rotation = Quaternion.Lerp(
+                transform.rotation, open, Time.deltaTime * lerpTime);
         }
+
+        Debug.Log(transform.rotation);
     }
 }
