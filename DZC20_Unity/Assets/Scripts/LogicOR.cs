@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LogicAND : MonoBehaviour
+public class LogicOR : MonoBehaviour
 {
     public LEDNode input_1 = null;
     public LEDNode input_2 = null;
@@ -11,7 +11,7 @@ public class LogicAND : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(input_1.GetComponent<LEDNode>().isFirstNode == true && input_2.GetComponent<LEDNode>().isFirstNode == true){
+        if(input_1.GetComponent<LEDNode>().isFirstNode == true || input_2.GetComponent<LEDNode>().isFirstNode == true){
             output.GetComponent<LEDNode>().isFirstNode = true;
         } else {
             output.GetComponent<LEDNode>().isFirstNode = false;

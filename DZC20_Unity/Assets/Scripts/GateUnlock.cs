@@ -5,8 +5,11 @@ using UnityEngine;
 public class GateUnlock : MonoBehaviour
 {
     public LEDNode node = null;
-    private Quaternion open;
     public float lerpTime = 1;
+    public GameObject walls = null;
+
+    private Quaternion open;
+    private Transform nodeZero;
 
     // Start is called before the first frame update
     void Start()
@@ -18,10 +21,15 @@ public class GateUnlock : MonoBehaviour
     void Update()
     {
         if (node.GetComponent<LEDNode>().isFirstNode == true){
+            // Open Door
             transform.rotation = Quaternion.Lerp(
                 transform.rotation, open, Time.deltaTime * lerpTime);
+            
+            // Activate Walls
+            foreach (Transform child in walls.transform) {
+                nodeZero = child.GetChild(0);
+                nodeZero.gameObject.GetComponent<LEDNode>().isFirstNode = true;
+            }
         }
-
-        Debug.Log(transform.rotation);
     }
 }
