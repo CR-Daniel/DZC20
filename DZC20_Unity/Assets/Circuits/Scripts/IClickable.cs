@@ -1,8 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+// using System.Collections;
+// using System.Collections.Generic;
+// using UnityEngine;
 
-public class IClickable : MonoBehaviour
-{
-    void click();
-}
+// public class IClickable : MonoBehaviour
+// {
+//     //void click();
+// }
