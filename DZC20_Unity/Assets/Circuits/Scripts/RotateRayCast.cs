@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RotateRayCast : MonoBehaviour
 {
+     float tiltAngle = 60.0f;
     private void Update(){
         if(Input.GetMouseButtonDown(0)){
 
@@ -14,11 +15,11 @@ public class RotateRayCast : MonoBehaviour
 
                 if(hit.transform != null){
                     PrintName(hit.transform.gameObject);
-                    //Rigidbody rb;
-                    //if(rb = hit.transform.GetComponent<Rigidbody>()){
+                    Rigidbody rb;
+                    if(rb = hit.transform.GetComponent<Rigidbody>()){
                         
-                      //  Rotate(rb);
-                    //}
+                      Rotate(rb);
+                    }
                 }
             }
         }  
@@ -28,7 +29,7 @@ public class RotateRayCast : MonoBehaviour
         print(go.name);
     }
 
-    //private void Rotate(Rigidbody rig){
-      //  rig.transform.Rotate(Vector3.up, 90.0f);
-    //}
+    private void Rotate(Rigidbody rig){
+        //rig.transform.Rotate(Vector3.up, 45, 1);
+    }
 }

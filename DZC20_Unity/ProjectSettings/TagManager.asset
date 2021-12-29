@@ -14,7 +14,7 @@ TagManager:
   - UI
   - LED
   - Still
-  - 
+  - Front
   - 
   - 
   - 
@@ -39,6 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Front
+    uniqueID: 1900091789
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
