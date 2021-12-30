@@ -7,6 +7,7 @@ public class LabGate : MonoBehaviour
 {
     public RawImage keyImage;
     public GameObject keyError;
+    private bool doorMotion;
     private static Vector3 ogPosition;
     private static Vector3 endPosition;
 
@@ -18,23 +19,26 @@ public class LabGate : MonoBehaviour
 
         // Define Start & End Gate Position for Translation
         ogPosition = transform.position;
-        endPosition = new Vector3(ogPosition.x, ogPosition.y - 50f, ogPosition.z);
+        endPosition = new Vector3(ogPosition.x, ogPosition.y - 9f, ogPosition.z);
+    }
+
+    void Update()
+    {
+        if (doorMotion){
+            transform.position = Vector3.MoveTowards(transform.position, endPosition, Time.deltaTime * 5f);
+            if (transform.position == endPosition){
+                keyImage.enabled = false;
+                doorMotion = false;
+            }
+        }
     }
 
     void OnTriggerEnter(Collider collider)
     {
-        // If Player has Key in UI
-        if (keyImage.enabled == true)
-        {
-            // Open Door
-            transform.position = Vector3.Lerp(
-                transform.position, endPosition, Time.deltaTime * 2);
-            
-            // If Fully Open
-            if (transform.position == endPosition){
-                // Hide Key in UI
-                keyImage.enabled = false;
-            }
+        if (keyImage.enabled == true){
+            doorMotion = true;
+        } else if (transform.position == endPosition){
+            // do nothing   
         } else {
             // Show NoKey Error Panel
             keyError.SetActive(true);
