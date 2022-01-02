@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class RotateRayCast : MonoBehaviour
 {
-     float tiltAngle = 60.0f;
     private void Update(){
         if(Input.GetMouseButtonDown(0)){
 
@@ -30,6 +29,6 @@ public class RotateRayCast : MonoBehaviour
     }
 
     private void Rotate(Rigidbody rig){
-        //rig.transform.Rotate(Vector3.up, 45, 1);
+        rig.transform.Rotate(0, 0, 90f);
     }
 }
