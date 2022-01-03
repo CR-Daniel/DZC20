@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class RotateRayCast : MonoBehaviour
 {
-    public float lerpTime = 1;
-    private Quaternion end_rotation;
-
     private void Update(){
         if(Input.GetMouseButtonDown(0)){
 
