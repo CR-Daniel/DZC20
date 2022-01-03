@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: water
+  m_Name: faster water
   m_Shader: {fileID: -6465566751694194690, guid: 938d2014c3ab31c7b83282963890065a, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -34,7 +34,7 @@ Material:
     m_Floats:
     - Vector1_993dedec7dfd4704b3cb18da391ffd6a: 7
     - Vector1_9ee6ef713d004e5098b6e5ff83abfac4: 0.1
-    - Vector1_c06f4606f2db4bc0ac0395eaf017db99: 1
+    - Vector1_c06f4606f2db4bc0ac0395eaf017db99: 3
     - Vector1_c423723d1c5141b79100d8e08ea40b32: 5
     m_Colors:
     - Color_3d8dbb79c6f14ac6bdac513601f0c733: {r: 0.1019608, g: 0.5254902, b: 0.8941177, a: 0}
