@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class RotateRayCast : MonoBehaviour
 {
+    public float lerpTime = 1;
+    private Quaternion end_rotation;
+
     private void Update(){
         if(Input.GetMouseButtonDown(0)){
 
@@ -14,11 +17,11 @@ public class RotateRayCast : MonoBehaviour
 
                 if(hit.transform != null){
                     PrintName(hit.transform.gameObject);
-                    Rigidbody rb;
-                    if(rb = hit.transform.GetComponent<Rigidbody>()){
-                        
-                      Rotate(rb);
-                    }
+
+                    // Simple Instantaneous Rotation
+                    // hit.transform.Rotate(0, 0, 90);
+
+                    StartCoroutine(Rotate(hit.transform.gameObject, 0, 0, 90, 0.5f));
                 }
             }
         }  
@@ -28,7 +31,23 @@ public class RotateRayCast : MonoBehaviour
         print(go.name);
     }
 
-    private void Rotate(Rigidbody rig){
-        rig.transform.Rotate(0, 0, 90f);
+    IEnumerator Rotate(GameObject obj, float x, float y, float z, float duration)
+    {
+        bool rotating = true;
+        float timeElapsed = 0;
+        float lerpDuration = duration;
+
+        Quaternion startRotation = obj.transform.rotation;
+        Quaternion targetRotation = obj.transform.rotation * Quaternion.Euler(x, y, z);
+
+        while (timeElapsed < lerpDuration)
+        {
+            obj.transform.rotation = Quaternion.Slerp(startRotation, targetRotation, timeElapsed / lerpDuration);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        obj.transform.rotation = targetRotation;
+        rotating = false;
     }
 }
