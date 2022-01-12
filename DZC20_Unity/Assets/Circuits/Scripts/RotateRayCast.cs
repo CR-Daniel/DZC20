@@ -4,24 +4,45 @@ using UnityEngine;
 
 public class RotateRayCast : MonoBehaviour
 {
+    //Level 1 SphereX
+    public Transform GameObject1;
+    //Level 2 SphereX
+    public Transform GameObject2;
+    //Level 2 SphereY
+    public Transform GameObject3;
+    public GameObject camera;
+    public GameObject EndCam;
     private void Update(){
-        if(Input.GetMouseButtonDown(0)){
 
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if(Input.GetMouseButtonDown(0)){
+                
+                RaycastHit hit;
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            if(Physics.Raycast(ray, out hit, 100.0f)){
+                if(Physics.Raycast(ray, out hit, 100.0f)){
 
-                if(hit.transform != null){
-                    PrintName(hit.transform.gameObject);
+                    if(hit.transform != null){
+                        PrintName(hit.transform.gameObject);
 
-                    // Simple Instantaneous Rotation
-                    // hit.transform.Rotate(0, 0, 90);
+                        // Simple Instantaneous Rotation
+                        // hit.transform.Rotate(0, 0, 90);
 
-                    StartCoroutine(Rotate(hit.transform.gameObject, 0, 0, 90, 0.5f));
+                        StartCoroutine(Rotate(hit.transform.gameObject, 0, 0, 90, 0.5f));
+                    }
                 }
             }
-        }  
+        //Level 1 SphereX
+        if(GameObject1.eulerAngles.z >= 180f && GameObject1.eulerAngles.z <= 180f){
+            camera.SetActive(false);
+            EndCam.SetActive(true);
+        }
+        if((GameObject2.eulerAngles.z >= 180f && GameObject2.eulerAngles.z <= 180f) && (
+            (GameObject3.eulerAngles.z >= 180f && GameObject3.eulerAngles.z <= 180f) ||
+            (GameObject3.eulerAngles.z >= 90f && GameObject3.eulerAngles.z <= 90f)))
+        {
+            camera.SetActive(false);
+            EndCam.SetActive(true);
+        }
     }
 
     private void PrintName(GameObject go){
