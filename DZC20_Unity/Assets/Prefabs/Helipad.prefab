@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1165601668677626307}
   - component: {fileID: 1165601668677626304}
   - component: {fileID: 1165601668677626305}
-  - component: {fileID: 707961377947515346}
+  - component: {fileID: 4794923863533025407}
   m_Layer: 0
   m_Name: Helipad
   m_TagString: Untagged
@@ -97,7 +97,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &707961377947515346
+--- !u!114 &4794923863533025407
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,9 +106,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1165601668677626310}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b605c1b7bbde4904a838ae5355eadadb, type: 3}
+  m_Script: {fileID: 11500000, guid: 59560d2f553caf819b4807b575c1979e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transition: {fileID: 0}
-  transitionTime: 1
+  levlo: {fileID: 0}
   index: 0
