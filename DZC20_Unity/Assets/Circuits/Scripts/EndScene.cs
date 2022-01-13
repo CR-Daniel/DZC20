@@ -14,6 +14,7 @@ public class EndScene : MonoBehaviour
     public void OnClickNext()
     {
         EndCam.SetActive(false);
-        Level1Cam.SetActive(true);
+        Level1Cam.SetActive(false);
+        Level2Cam.SetActive(true);
     }
 }
