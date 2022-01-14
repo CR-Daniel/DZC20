@@ -26,16 +26,16 @@ public class FlyZoneExit : MonoBehaviour
     void OnTriggerEnter(Collider collider)
     {
         // Show Error Message
-        StartCoroutine(ShowError(collider));
+        StartCoroutine(ShowError());
     }
 
-    IEnumerator ShowError(Collider collider)
+    IEnumerator ShowError()
     {
         text.text = messages[messageIndex];
         messageIndex += 1;
 
         if(messageIndex == messages.Length){
-            Destroy(collider);
+            Destroy(GetComponent<Collider>());
         }
 
         error.SetActive(true);
