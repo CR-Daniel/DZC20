@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RotateRayCast : MonoBehaviour
 {
+    public const float MOVEMENT_TIME = 2.0f; // The object moves for 2 seconds
+    public const float MOVEMENT_DISTANCE = 40.0f; // Distance the object should move
     //Level 1 SphereX
     public Transform Level1X;
     //Level 2 SphereX
@@ -59,8 +61,10 @@ public class RotateRayCast : MonoBehaviour
         //Level 3
         if((Level3X.eulerAngles.z >= 0f && Level3X.eulerAngles.z <= 0f) || 
             (Level3X.eulerAngles.z >= 270f && Level3X.eulerAngles.z <= 270f)){
-            camera.SetActive(false);
-            EndCam.SetActive(true);
+            //camera.SetActive(false);
+            //EndCam.SetActive(true);
+            StopCoroutine("MoveObject");
+            StartCoroutine("MoveObject", MOVEMENT_DISTANCE);
         }
         //Level 4
         if((Level4X.eulerAngles.z >= 0f && Level4X.eulerAngles.z <= 0f) && 
@@ -94,5 +98,20 @@ public class RotateRayCast : MonoBehaviour
 
         obj.transform.rotation = targetRotation;
         rotating = false;
+    }
+
+    IEnumerator MoveObject(float distance)
+    {
+        Vector3 currentPosition = this.transform.position;
+        Vector3 targetPosition = new Vector3(this.transform.position.x + distance, this.transform.position.y, this.transform.position.z);
+        float currentTime = 0.0f;
+ 
+        while(currentTime <= MOVEMENT_TIME)
+        {
+            float movementFactor = currentTime / MOVEMENT_TIME;
+            this.transform.position = Vector3.Lerp(currentPosition, targetPosition, movementFactor);
+            currentTime += Time.deltaTime;
+            yield return null;
+        }
     }
 }
