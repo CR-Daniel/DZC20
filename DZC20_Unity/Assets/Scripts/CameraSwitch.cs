@@ -18,20 +18,17 @@ public class CameraSwitch : MonoBehaviour
         cameras[0].enabled = true;
     }
 
-    void Update()
+    public void Switch()
     {
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            // Disable Current Camera
-            cameras[levelIndex].enabled = false;
+        // Disable Current Camera
+        cameras[levelIndex].enabled = false;
 
-            // Get Next Camera
-            if (levelIndex + 1 != cameras.Length){
-                levelIndex += 1;
-            }
-
-            // Enable Next Camera
-            cameras[levelIndex].enabled = true;
+        // Get Next Camera
+        if (levelIndex + 1 != cameras.Length){
+            levelIndex += 1;
         }
+
+        // Enable Next Camera
+        cameras[levelIndex].enabled = true;
     }
 }
