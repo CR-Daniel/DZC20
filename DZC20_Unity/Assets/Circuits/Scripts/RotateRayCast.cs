@@ -61,10 +61,10 @@ public class RotateRayCast : MonoBehaviour
         //Level 3
         if((Level3X.eulerAngles.z >= 0f && Level3X.eulerAngles.z <= 0f) || 
             (Level3X.eulerAngles.z >= 270f && Level3X.eulerAngles.z <= 270f)){
-            //camera.SetActive(false);
-            //EndCam.SetActive(true);
-            StopCoroutine("MoveObject");
-            StartCoroutine("MoveObject", MOVEMENT_DISTANCE);
+            camera.SetActive(false);
+            EndCam.SetActive(true);
+            // StopCoroutine("MoveObject");
+            // StartCoroutine("MoveObject", MOVEMENT_DISTANCE);
         }
         //Level 4
         if((Level4X.eulerAngles.z >= 0f && Level4X.eulerAngles.z <= 0f) && 
@@ -100,18 +100,18 @@ public class RotateRayCast : MonoBehaviour
         rotating = false;
     }
 
-    IEnumerator MoveObject(float distance)
-    {
-        Vector3 currentPosition = this.transform.position;
-        Vector3 targetPosition = new Vector3(this.transform.position.x + distance, this.transform.position.y, this.transform.position.z);
-        float currentTime = 0.0f;
+    // IEnumerator MoveObject(float distance)
+    // {
+    //     Vector3 currentPosition = this.transform.position;
+    //     Vector3 targetPosition = new Vector3(this.transform.position.x + distance, this.transform.position.y, this.transform.position.z);
+    //     float currentTime = 0.0f;
  
-        while(currentTime <= MOVEMENT_TIME)
-        {
-            float movementFactor = currentTime / MOVEMENT_TIME;
-            this.transform.position = Vector3.Lerp(currentPosition, targetPosition, movementFactor);
-            currentTime += Time.deltaTime;
-            yield return null;
-        }
-    }
+    //     while(currentTime <= MOVEMENT_TIME)
+    //     {
+    //         float movementFactor = currentTime / MOVEMENT_TIME;
+    //         this.transform.position = Vector3.Lerp(currentPosition, targetPosition, movementFactor);
+    //         currentTime += Time.deltaTime;
+    //         yield return null;
+    //     }
+    // }
 }
