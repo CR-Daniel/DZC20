@@ -43804,7 +43804,7 @@ GameObject:
   - component: {fileID: 1860549672}
   - component: {fileID: 1860549671}
   m_Layer: 0
-  m_Name: Global Volume
+  m_Name: Post Processing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
