@@ -72,7 +72,7 @@ public class CameraSwitch : MonoBehaviour
                 break;
 
             case 3:
-                bool d1 = level4[0].eulerAngles.z >= 0f && level4[0].eulerAngles.z <= 0f;
+                bool d1 = (level4[0].eulerAngles.z >= 0f && level4[0].eulerAngles.z <= 0f) || (level4[0].eulerAngles.z >= 180f && level4[0].eulerAngles.z <= 180f);
                 bool d2 = level4[2].eulerAngles.z >= 90f && level4[2].eulerAngles.z <= 90f;
                 bool d3 = level4[3].eulerAngles.z >= 270f && level4[3].eulerAngles.z <= 270f;
                 bool d4 = level4[4].eulerAngles.z >= 180f && level4[4].eulerAngles.z <= 180f;
