@@ -24,7 +24,7 @@ public class DroneMovementScript : MonoBehaviour
             );
     }
 
-    
+
     //--------------------------------------------------------------------------------------------------------------------------------------------------------------------
     public float upForce;       //float that will receive a value in the next function which defines the translation of the height of the drone
     void MovementUpDown()       //function that controles the height translation of the drone
@@ -38,27 +38,27 @@ public class DroneMovementScript : MonoBehaviour
             if(!Input.GetKey(KeyCode.I) && !Input.GetKey(KeyCode.K) && !Input.GetKey(KeyCode.J) && !Input.GetKey(KeyCode.L))
             {
                 ourDrone.velocity = new Vector3(ourDrone.velocity.x, Mathf.Lerp(ourDrone.velocity.y, 0, Time.deltaTime * 5), ourDrone.velocity.z);
-                upForce = 281;
+                upForce = 281f;
             }
             if(!Input.GetKey(KeyCode.I) && !Input.GetKey(KeyCode.K) && Input.GetKey(KeyCode.J) || Input.GetKey(KeyCode.L))
             {
                 ourDrone.velocity = new Vector3(ourDrone.velocity.x, Mathf.Lerp(ourDrone.velocity.y, 0, Time.deltaTime * 5), ourDrone.velocity.z);
-                upForce = 110;
+                upForce = 110f;
             }
             if(Input.GetKey(KeyCode.I) || Input.GetKey(KeyCode.K))
             {
-                upForce = 410;
+                upForce = 410f;
             }
         }
 
         if(Mathf.Abs(Input.GetAxis("Vertical")) < 0.2f && Mathf.Abs(Input.GetAxis("Horizontal")) > 0.2f)
         {
-            upForce = 135;
+            upForce = 135f;
         }
 
         if(Input.GetKey(KeyCode.I))     //this key (I) will move the drone up (can be changed)
         {
-            upForce = 450;      //force upward in Newton applied to the drone to accelerate it upward
+            upForce = 450f;      //force upward in Newton applied to the drone to accelerate it upward
             if(Mathf.Abs(Input.GetAxis("Horizontal")) > 0.2f)
             {
                 upForce = 500f;
@@ -66,7 +66,7 @@ public class DroneMovementScript : MonoBehaviour
         }
         else if(Input.GetKey(KeyCode.K))    //this key (K) will move the drone down (can be changed)
         {
-            upForce = -200;     //force downward (because it's negative) in Newton applied to the drone which makes it accelerate downward
+            upForce = -200f;     //force downward (because it's negative) in Newton applied to the drone which makes it accelerate downward
         }
         else if(!Input.GetKey(KeyCode.I) && !Input.GetKey(KeyCode.K) && (Mathf.Abs(Input.GetAxis("Vertical")) < 0.2f && Mathf.Abs(Input.GetAxis("Horizontal")) < 0.2f) )       //in case that there is no input for the height translation/stationairy state of the drone
         {
@@ -75,7 +75,7 @@ public class DroneMovementScript : MonoBehaviour
     }
 
     //--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    private float movementForwardSpeed = 500.0f;        //change this float to change the speed of the drone, the higher the number, the faster the drone goes (must be positive)
+    [SerializeField] float movementForwardSpeed = 500.0f;        //change this float to change the speed of the drone, the higher the number, the faster the drone goes (must be positive)
     private float tiltAmountForward = 0;                //tilt angle of the drone for moving forward in stationary mode (should stay at 0)
     private float tiltVelocityForward;                  //float used in the function below
     void MovementForward()      //function that controles the forward/backward translation of the drone
@@ -133,7 +133,7 @@ public class DroneMovementScript : MonoBehaviour
     }
 
     //--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    private float sideMovement = 300.0f;    //change this float to change the sideways speed of the drone, the higher the number, the faster the drone goes (must be positive)
+    [SerializeField] float sideMovement = 300.0f;    //change this float to change the sideways speed of the drone, the higher the number, the faster the drone goes (must be positive)
     private float tiltAmountSideways;       //stores the tilt angle of the drone sideways for the function below
     private float tiltAmountVelocity;       //stores the tilt speed of the drone sideways for the function below
     void Swerve()       //function that controles the left/right translation of the drone
@@ -145,7 +145,7 @@ public class DroneMovementScript : MonoBehaviour
         }
         else
         {
-            tiltAmountSideways = Mathf.SmoothDamp(tiltAmountSideways, 0, ref tiltAmountVelocity, 0.1f);      
+            tiltAmountSideways = Mathf.SmoothDamp(tiltAmountSideways, 0, ref tiltAmountVelocity, 0.1f);
         }
     }
 }
