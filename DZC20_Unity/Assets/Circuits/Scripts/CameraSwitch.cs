@@ -8,7 +8,7 @@ public class CameraSwitch : MonoBehaviour
     // UI Elements
     public GameObject button;
     public GameObject[] screens;
-
+    public GameObject[] resistors; 
     public Camera[] cameras;
     private int levelIndex = 0;
 
@@ -34,6 +34,14 @@ public class CameraSwitch : MonoBehaviour
             screen.SetActive(false);
         }
 
+        //Disable all UI Resistors
+        foreach (GameObject resistor in resistors){
+            resistor.SetActive(false);
+        }
+
+        //Enable first Resistor
+        resistors[0].SetActive(true);
+
         // Disable Button
         button.SetActive(false);
     }
@@ -47,10 +55,15 @@ public class CameraSwitch : MonoBehaviour
                 if(a1){
                     screens[levelIndex].SetActive(true);
                     button.SetActive(true);
+                    resistors[0].SetActive(false);
+                    
+
                 }
                 break;
 
             case 1:
+                resistors[1].SetActive(true);
+                resistors[2].SetActive(true);
                 bool b1 = level2[0].eulerAngles.z >= 180f && level2[0].eulerAngles.z <= 180f;
                 bool b2 = level2[1].eulerAngles.z >= 180f && level2[1].eulerAngles.z <= 180f;
                 bool b3 = level2[1].eulerAngles.z >= 90f && level2[1].eulerAngles.z <= 90f;
@@ -58,6 +71,11 @@ public class CameraSwitch : MonoBehaviour
                 if (b1 && (b2 || b3)){
                     screens[levelIndex].SetActive(true);
                     button.SetActive(true);
+                    resistors[1].SetActive(false);
+                    resistors[2].SetActive(false);
+                    resistors[3].SetActive(true);
+                    resistors[4].SetActive(true);
+                    resistors[5].SetActive(true);
                 }
                 break;
 
@@ -68,6 +86,19 @@ public class CameraSwitch : MonoBehaviour
                 if(c1 || c2){
                     screens[levelIndex].SetActive(true);
                     button.SetActive(true);
+                    resistors[3].SetActive(false);
+                    resistors[4].SetActive(false);
+                    resistors[5].SetActive(false);
+                    resistors[6].SetActive(true);
+                    resistors[7].SetActive(true);
+                    resistors[8].SetActive(true);
+                    resistors[9].SetActive(true);
+                    resistors[10].SetActive(true);
+                    resistors[11].SetActive(true);
+                    resistors[12].SetActive(true);
+                    resistors[13].SetActive(true);
+                    resistors[14].SetActive(true);
+                    resistors[15].SetActive(true);
                 }
                 break;
 
@@ -98,6 +129,11 @@ public class CameraSwitch : MonoBehaviour
         if (levelIndex + 1 != cameras.Length){
             levelIndex += 1;
         }
+
+        //Get next resistors
+        // if(levelIndex + 1 != resistors.Length){
+        //     levelIndex++;
+        // }
 
         // Enable Next Camera
         cameras[levelIndex].enabled = true;
