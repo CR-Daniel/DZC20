@@ -9,9 +9,8 @@ public class Building : MonoBehaviour
     public GameObject interact;
     public Text text;
     public string[] messages;
-    private int messageIndex = 0;
+    private int messageIndex;
     private bool inside;
-    private bool visited;
     private bool request;
 
     void Start()
@@ -22,11 +21,12 @@ public class Building : MonoBehaviour
 
     void Update()
     {
-        if (inside && !visited && Input.GetKeyDown(KeyCode.Q)){
+        if (inside && Input.GetKeyDown(KeyCode.E)){
+            messageIndex = 0;
             request = true;
         }
 
-        if (inside && !visited && request){
+        if (inside && request){
             // freeze time
             Time.timeScale = 0;
 
@@ -34,7 +34,6 @@ public class Building : MonoBehaviour
                 text.text = messages[messageIndex];
                 box.SetActive(true);
             } else {
-                visited = true;
                 Time.timeScale = 1;
             }
 

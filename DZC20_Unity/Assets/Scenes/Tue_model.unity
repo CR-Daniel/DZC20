@@ -1126,6 +1126,36 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 731b8b3b309720246a8e9f3b63bfa72b, type: 3}
   m_PrefabInstance: {fileID: 383600879}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &30694481
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30694480}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 26.4027, z: 9.112222}
+  m_Center: {x: -5.684861, y: 12.559508, z: -5.1650977}
+--- !u!114 &30694482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30694480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa70e2a01cd448078559439a28ab6b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  box: {fileID: 205803962}
+  interact: {fileID: 1604041437}
+  text: {fileID: 2066016603}
+  messages:
+  - You found Traverse!
 --- !u!64 &30694483
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1281,6 +1311,36 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c37805709905792438bcbab641859034, type: 3}
   m_PrefabInstance: {fileID: 1876370910}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &33705273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33705272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa70e2a01cd448078559439a28ab6b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  box: {fileID: 205803962}
+  interact: {fileID: 1604041437}
+  text: {fileID: 2066016603}
+  messages:
+  - You found Matrix!
+--- !u!65 &33705274
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33705272}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 20.741718, z: 12.997682}
+  m_Center: {x: -11.598424, y: 7.241322, z: -6.571453}
 --- !u!64 &33705275
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7601,6 +7661,36 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6c7847ad949a9f74a85b4fcddd46394d, type: 3}
   m_PrefabInstance: {fileID: 1436756757}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &281170058
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281170057}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 13.183325, z: 9.086321}
+  m_Center: {x: -8.332584, y: -12.407121, z: 1.8858442}
+--- !u!114 &281170059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281170057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa70e2a01cd448078559439a28ab6b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  box: {fileID: 205803962}
+  interact: {fileID: 1604041437}
+  text: {fileID: 2066016603}
+  messages:
+  - You found Luna!
 --- !u!64 &281170060
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9849,6 +9939,36 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: aef6b180f12d9374ca46c4296b73c711, type: 3}
   m_PrefabInstance: {fileID: 1373332353}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &363738463
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363738462}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 11.678118, z: 7.690172}
+  m_Center: {x: -5.2647414, y: -3.3741112, z: 0.07155895}
+--- !u!114 &363738464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363738462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa70e2a01cd448078559439a28ab6b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  box: {fileID: 205803962}
+  interact: {fileID: 1604041437}
+  text: {fileID: 2066016603}
+  messages:
+  - You found Laplace!
 --- !u!64 &363738465
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12387,6 +12507,36 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f75798e667ae00c4d9a6b152b793e583, type: 3}
   m_PrefabInstance: {fileID: 1407640585}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &454829431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454829430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa70e2a01cd448078559439a28ab6b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  box: {fileID: 205803962}
+  interact: {fileID: 1604041437}
+  text: {fileID: 2066016603}
+  messages:
+  - You found Auditorium!
+--- !u!65 &454829432
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454829430}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 11.943608, z: 13.447982}
+  m_Center: {x: -1.1450438, y: 0.8323288, z: 1.0006227}
 --- !u!64 &454829433
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13040,7 +13190,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 8.655424, y: 8.740295, z: 17.821066}
+  m_Size: {x: 20, y: 8.740295, z: 17.821066}
   m_Center: {x: -6.275181, y: -10.164603, z: 1.6571865}
 --- !u!114 &471328266
 MonoBehaviour:
@@ -15049,6 +15199,36 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9a94ba32663393746ab2fcfbda6d981c, type: 3}
   m_PrefabInstance: {fileID: 1093043907}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &571208280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571208279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa70e2a01cd448078559439a28ab6b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  box: {fileID: 205803962}
+  interact: {fileID: 1604041437}
+  text: {fileID: 2066016603}
+  messages:
+  - You found Cascade!
+--- !u!65 &571208281
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571208279}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 7.3185205, z: 18.062052}
+  m_Center: {x: -9.513106, y: 6.379207, z: -5.3653955}
 --- !u!64 &571208282
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17233,6 +17413,36 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cc742af5bfa55af47995c91a1fb6b01f, type: 3}
   m_PrefabInstance: {fileID: 700777460}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &631549399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631549398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa70e2a01cd448078559439a28ab6b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  box: {fileID: 205803962}
+  interact: {fileID: 1604041437}
+  text: {fileID: 2066016603}
+  messages:
+  - You found Differ!
+--- !u!65 &631549400
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631549398}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 8.371841, z: 30.434475}
+  m_Center: {x: -8.632193, y: 6.547142, z: -8.634138}
 --- !u!64 &631549401
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20257,7 +20467,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714582637}
-  m_LocalRotation: {x: 0.21169959, y: -0.000000018801302, z: 0.0000000040725325, w: 0.9773348}
+  m_LocalRotation: {x: 0.21169959, y: 0.0000000188013, z: -0.000000004072532, w: 0.9773348}
   m_LocalPosition: {x: 47.095, y: 1.5486953, z: 54.401974}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -22733,6 +22943,36 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4cdf4c236a5bcdf44b7f6be8905c74cc, type: 3}
   m_PrefabInstance: {fileID: 583123387}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &813885989
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813885988}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 11.496612, z: 16.789183}
+  m_Center: {x: -10.398708, y: -6.299759, z: 5.6479406}
+--- !u!114 &813885990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813885988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa70e2a01cd448078559439a28ab6b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  box: {fileID: 205803962}
+  interact: {fileID: 1604041437}
+  text: {fileID: 2066016603}
+  messages:
+  - You found Flux!
 --- !u!64 &813885991
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23557,6 +23797,36 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8c372ef87e1c8b0469a62ca26d5b5c7f, type: 3}
   m_PrefabInstance: {fileID: 1336304464}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &842126211
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842126210}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 12.466295, z: 10.232009}
+  m_Center: {x: -5.2830544, y: 12.899228, z: 5.1137495}
+--- !u!114 &842126212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842126210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa70e2a01cd448078559439a28ab6b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  box: {fileID: 205803962}
+  interact: {fileID: 1604041437}
+  text: {fileID: 2066016603}
+  messages:
+  - You found the Kopel!
 --- !u!64 &842126213
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27693,6 +27963,36 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5602805c2ed9b604e88e6cfdc4616e03, type: 3}
   m_PrefabInstance: {fileID: 215861496}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &996150253
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996150252}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 10.257268, z: 7.2633843}
+  m_Center: {x: -4.9663506, y: -5.8206024, z: 3.6306317}
+--- !u!114 &996150254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996150252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa70e2a01cd448078559439a28ab6b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  box: {fileID: 205803962}
+  interact: {fileID: 1604041437}
+  text: {fileID: 2066016603}
+  messages:
+  - You found Gemini!
 --- !u!64 &996150255
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -40831,6 +41131,36 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ebd045cb8c77fd34997da1e108a8eeb7, type: 3}
   m_PrefabInstance: {fileID: 1210327766}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1465405897
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465405896}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 12.783634, z: 14.499443}
+  m_Center: {x: -9.751051, y: -7.6004567, z: -10.572571}
+--- !u!114 &1465405898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465405896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa70e2a01cd448078559439a28ab6b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  box: {fileID: 205803962}
+  interact: {fileID: 1604041437}
+  text: {fileID: 2066016603}
+  messages:
+  - You found Vertigo!
 --- !u!64 &1465405899
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -46124,7 +46454,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.818186, y: 11.342067, z: 17.058105}
+  m_Size: {x: 20, y: 11.342067, z: 17.058105}
   m_Center: {x: -5.9169188, y: 0.5645418, z: -2.0599604}
 --- !u!114 &1676229222
 MonoBehaviour:
@@ -46724,6 +47054,36 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d86b2a2bf470ce54cb0fa3473eb98a11, type: 3}
   m_PrefabInstance: {fileID: 1846105877}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1705721050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705721049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa70e2a01cd448078559439a28ab6b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  box: {fileID: 205803962}
+  interact: {fileID: 1604041437}
+  text: {fileID: 2066016603}
+  messages:
+  - You found Helix!
+--- !u!65 &1705721051
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705721049}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 10.339935, z: 14.492069}
+  m_Center: {x: -6.843009, y: -4.466728, z: 0.207201}
 --- !u!64 &1705721052
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -55039,7 +55399,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2022258518}
-  m_LocalRotation: {x: 0.21169959, y: -0.000000018801302, z: 0.0000000040725325, w: 0.9773348}
+  m_LocalRotation: {x: 0.21169959, y: 0.0000000188013, z: -0.000000004072532, w: 0.9773348}
   m_LocalPosition: {x: 47.095, y: 1.5486953, z: 54.401974}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -56642,7 +57002,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press Q to Interact
+  m_Text: Press E to Interact
 --- !u!222 &2062115954
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -57724,6 +58084,36 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4b80d378762fecc419e40f6359d3ac28, type: 3}
   m_PrefabInstance: {fileID: 2024798621}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2105876852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105876851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa70e2a01cd448078559439a28ab6b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  box: {fileID: 205803962}
+  interact: {fileID: 1604041437}
+  text: {fileID: 2066016603}
+  messages:
+  - Finally! Mometum!
+--- !u!65 &2105876853
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105876851}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 21.209053, z: 16.616411}
+  m_Center: {x: -6.0077305, y: 0.87942123, z: 13.258763}
 --- !u!64 &2105876854
 MeshCollider:
   m_ObjectHideFlags: 0
