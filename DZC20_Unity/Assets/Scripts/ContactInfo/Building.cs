@@ -3,30 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Initial : MonoBehaviour
+public class Building : MonoBehaviour
 {
     public GameObject box;
+    public GameObject interact;
     public Text text;
-    private string[] messages;
+    public string[] messages;
     private int messageIndex = 0;
     private bool inside;
     private bool visited;
+    private bool request;
 
     void Start()
     {
         box.SetActive(false);
-        messages = new string[] {
-            "1",
-            "2",
-            "3",
-            "...",
-            "5"
-        };
+        interact.SetActive(false);
     }
 
     void Update()
     {
-        if (inside && !visited){
+        if (inside && !visited && Input.GetKeyDown(KeyCode.Q)){
+            request = true;
+        }
+
+        if (inside && !visited && request){
             // freeze time
             Time.timeScale = 0;
 
@@ -49,10 +49,12 @@ public class Initial : MonoBehaviour
     void OnTriggerEnter(Collider collider)
     {
         inside = true;
+        interact.SetActive(true);
     }
 
     void OnTriggerExit(Collider collider)
     {
         inside = false;
+        interact.SetActive(false);
     }
 }
