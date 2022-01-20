@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: c0417b6573ea8685ba8a00c2cc11c897, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -6398,10 +6398,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603d028a6c6c03045895346930c0b8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 91845160}
-  Level2Cam: {fileID: 1176522068}
-  Level1Cam: {fileID: 741938640}
-  EndCam: {fileID: 816343559}
 --- !u!114 &726553526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6593,10 +6589,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603d028a6c6c03045895346930c0b8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 91845160}
-  Level2Cam: {fileID: 1176522068}
-  Level1Cam: {fileID: 741938640}
-  EndCam: {fileID: 816343559}
 --- !u!1 &742661294
 GameObject:
   m_ObjectHideFlags: 0
@@ -7658,10 +7650,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603d028a6c6c03045895346930c0b8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 91845160}
-  Level2Cam: {fileID: 1176522068}
-  Level1Cam: {fileID: 741938640}
-  EndCam: {fileID: 816343559}
 --- !u!114 &816343562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11177,10 +11165,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603d028a6c6c03045895346930c0b8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 91845160}
-  Level2Cam: {fileID: 1176522068}
-  Level1Cam: {fileID: 741938640}
-  EndCam: {fileID: 816343559}
 --- !u!1 &1181944047
 GameObject:
   m_ObjectHideFlags: 0
@@ -16012,10 +15996,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603d028a6c6c03045895346930c0b8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 91845160}
-  Level2Cam: {fileID: 1176522068}
-  Level1Cam: {fileID: 741938640}
-  EndCam: {fileID: 816343559}
 --- !u!114 &1656505497
 MonoBehaviour:
   m_ObjectHideFlags: 0
