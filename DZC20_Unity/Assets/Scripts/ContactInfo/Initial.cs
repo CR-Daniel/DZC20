@@ -11,6 +11,20 @@ public class Initial : MonoBehaviour
     private int messageIndex = 0;
     private bool inside;
     private bool visited;
+    static bool created = false;
+
+    void Awake()
+    {
+        if(!created)
+        {
+            DontDestroyOnLoad(this.gameObject);
+            created = true;
+        }
+        else
+        {
+        Destroy(this.gameObject);
+        }
+    }
 
     void Start()
     {
