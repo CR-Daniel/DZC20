@@ -56,14 +56,13 @@ public class CameraSwitch : MonoBehaviour
                     screens[levelIndex].SetActive(true);
                     button.SetActive(true);
                     resistors[0].SetActive(false);
-                    
+                    resistors[1].SetActive(true);
+                    resistors[2].SetActive(true);
 
                 }
                 break;
 
             case 1:
-                resistors[1].SetActive(true);
-                resistors[2].SetActive(true);
                 bool b1 = level2[0].eulerAngles.z >= 180f && level2[0].eulerAngles.z <= 180f;
                 bool b2 = level2[1].eulerAngles.z >= 180f && level2[1].eulerAngles.z <= 180f;
                 bool b3 = level2[1].eulerAngles.z >= 90f && level2[1].eulerAngles.z <= 90f;
@@ -129,11 +128,6 @@ public class CameraSwitch : MonoBehaviour
         if (levelIndex + 1 != cameras.Length){
             levelIndex += 1;
         }
-
-        //Get next resistors
-        // if(levelIndex + 1 != resistors.Length){
-        //     levelIndex++;
-        // }
 
         // Enable Next Camera
         cameras[levelIndex].enabled = true;
