@@ -7,6 +7,7 @@ public class RotateRayCast : MonoBehaviour
     
     public GameObject camera;
     public GameObject EndCam;
+    public bool moving = false;
     private void Update(){
 
             if(Input.GetMouseButtonDown(0)){
@@ -16,10 +17,12 @@ public class RotateRayCast : MonoBehaviour
 
                 if(Physics.Raycast(ray, out hit, 100.0f)){
 
-                    if(hit.transform != null){
-                        PrintName(hit.transform.gameObject);
+                    while(moving == false){
+                        if(hit.transform != null){
+                            PrintName(hit.transform.gameObject);
 
-                        StartCoroutine(Rotate(hit.transform.gameObject, 0, 0, 90, 0.5f));
+                            StartCoroutine(Rotate(hit.transform.gameObject, 0, 0, 90, 0.5f));
+                        }
                     }
                 }
             }
@@ -34,6 +37,7 @@ public class RotateRayCast : MonoBehaviour
         bool rotating = true;
         float timeElapsed = 0;
         float lerpDuration = duration;
+        moving = true;
 
         Quaternion startRotation = obj.transform.rotation;
         Quaternion targetRotation = obj.transform.rotation * Quaternion.Euler(x, y, z);
@@ -47,5 +51,6 @@ public class RotateRayCast : MonoBehaviour
 
         obj.transform.rotation = targetRotation;
         rotating = false;
+        moving = false;
     }
 }
