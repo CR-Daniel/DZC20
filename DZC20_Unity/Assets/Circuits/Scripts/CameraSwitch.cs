@@ -18,6 +18,9 @@ public class CameraSwitch : MonoBehaviour
     public Transform[] level3;
     public Transform[] level4;
 
+    public LevelLoader levlo;
+    private bool done = false;
+
 
     void Start()
     {
@@ -109,7 +112,9 @@ public class CameraSwitch : MonoBehaviour
 
                 if (d1 && d2 && d3 && d4){
                     screens[levelIndex].SetActive(true);
+                    button.GetComponentInChildren<Text>().text = "Return to Campus";
                     button.SetActive(true);
+                    done = true;
                 }
                 break;
         }
@@ -117,19 +122,24 @@ public class CameraSwitch : MonoBehaviour
 
     public void Switch()
     {
-        // Hide UI Screen
-        screens[levelIndex].SetActive(false);
-        button.SetActive(false);
-        
-        // Disable Current Camera
-        cameras[levelIndex].enabled = false;
+        if (!done){
+            // Hide UI Screen
+            screens[levelIndex].SetActive(false);
+            button.SetActive(false);
+            
+            // Disable Current Camera
+            cameras[levelIndex].enabled = false;
 
-        // Get Next Camera
-        if (levelIndex + 1 != cameras.Length){
-            levelIndex += 1;
+            // Get Next Camera
+            if (levelIndex + 1 != cameras.Length){
+                levelIndex += 1;
+            }
+
+            // Enable Next Camera
+            cameras[levelIndex].enabled = true;
+        } else {
+            levlo.LevelLoad(0);
         }
 
-        // Enable Next Camera
-        cameras[levelIndex].enabled = true;
     }
 }
