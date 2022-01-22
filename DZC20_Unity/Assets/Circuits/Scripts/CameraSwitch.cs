@@ -91,16 +91,10 @@ public class CameraSwitch : MonoBehaviour
                     resistors[3].SetActive(false);
                     resistors[4].SetActive(false);
                     resistors[5].SetActive(false);
-                    resistors[6].SetActive(true);
-                    resistors[7].SetActive(true);
-                    resistors[8].SetActive(true);
-                    resistors[9].SetActive(true);
-                    resistors[10].SetActive(true);
-                    resistors[11].SetActive(true);
-                    resistors[12].SetActive(true);
-                    resistors[13].SetActive(true);
-                    resistors[14].SetActive(true);
-                    resistors[15].SetActive(true);
+
+                    for (int i = 6; i < 16; i++){
+                        resistors[i].SetActive(true);
+                    }
                 }
                 break;
 
@@ -112,6 +106,9 @@ public class CameraSwitch : MonoBehaviour
 
                 if (d1 && d2 && d3 && d4){
                     screens[levelIndex].SetActive(true);
+                    for (int i = 6; i < 16; i++){
+                        resistors[i].SetActive(false);
+                    }
                     button.GetComponentInChildren<Text>().text = "Return to Campus";
                     button.SetActive(true);
                     done = true;
