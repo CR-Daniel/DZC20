@@ -1,14 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TYGHmovement : MonoBehaviour
 {
     Rigidbody ourDrone;
+
     void Awake()
     {
         ourDrone = GetComponent<Rigidbody>();     //makes the drone rigit so it won't fly through other ridgit bodies like the surroundings
         droneSound = gameObject.transform.Find("Drone_sound").GetComponent<AudioSource>();
+        imgagePressed_T.enabled = false;
+        imgagePressed_G.enabled = false;
+        imgagePressed_U.enabled = false;
+        imgagePressed_J.enabled = false;
 
         //Get the Renderer component from the new cube
         //var TRenderer = RotorT.GetComponent<Material>();
@@ -27,6 +33,11 @@ public class TYGHmovement : MonoBehaviour
     public GameObject RotorY;
     public GameObject RotorG;
     public GameObject RotorH;
+    public RawImage imgagePressed_T;
+    public RawImage imgagePressed_G;
+    public RawImage imgagePressed_U;
+    public RawImage imgagePressed_J;
+
 
     void FixedUpdate()
     {
@@ -62,10 +73,12 @@ public class TYGHmovement : MonoBehaviour
             rotationDirection += 1;
             NumberOfRotorsActive += 1;
             RotorT.transform.Rotate(0f, PropSpeedIncrease * PropSpeed * Time.fixedDeltaTime, 0f, Space.Self);
+            imgagePressed_T.enabled = true;
             //RotorT.color = Color.blue;
         }
         else  {
             RotorT.transform.Rotate(0f, PropSpeed * Time.fixedDeltaTime, 0f, Space.Self);
+            imgagePressed_T.enabled = false;
         }
     }
 
@@ -78,9 +91,11 @@ public class TYGHmovement : MonoBehaviour
             rotationDirection -= 1; ;
             NumberOfRotorsActive += 1;
             RotorY.transform.Rotate(0f, -1 * PropSpeedIncrease * PropSpeed * Time.fixedDeltaTime, 0f, Space.Self);
+            imgagePressed_U.enabled = true;
         }
         else {
             RotorY.transform.Rotate(0f, -1 * PropSpeed * Time.fixedDeltaTime, 0f, Space.Self);
+            imgagePressed_U.enabled = false;
         }
     }
 
@@ -93,9 +108,11 @@ public class TYGHmovement : MonoBehaviour
             rotationDirection -= 1; ;
             NumberOfRotorsActive += 1;
             RotorG.transform.Rotate(0f, PropSpeedIncrease * -1 * PropSpeed * Time.fixedDeltaTime, 0f, Space.Self);
+            imgagePressed_G.enabled = true;
         }
         else {
             RotorG.transform.Rotate(0f, -1 * PropSpeed * Time.fixedDeltaTime, 0f, Space.Self);
+            imgagePressed_G.enabled = false;
         }
     }
 
@@ -108,9 +125,11 @@ public class TYGHmovement : MonoBehaviour
             rotationDirection += 1; ;
             NumberOfRotorsActive += 1;
             RotorH.transform.Rotate(0f, PropSpeedIncrease * PropSpeed * Time.fixedDeltaTime, 0f, Space.Self);
+            imgagePressed_J.enabled = true;
         }
         else {
             RotorH.transform.Rotate(0f, PropSpeed * Time.fixedDeltaTime, 0f, Space.Self);
+            imgagePressed_J.enabled = false;
         }
     }
 
