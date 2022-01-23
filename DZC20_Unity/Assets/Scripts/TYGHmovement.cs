@@ -9,9 +9,9 @@ public class TYGHmovement : MonoBehaviour
     {
         ourDrone = GetComponent<Rigidbody>();     //makes the drone rigit so it won't fly through other ridgit bodies like the surroundings
         droneSound = gameObject.transform.Find("Drone_sound").GetComponent<AudioSource>();
-        
+
         //Get the Renderer component from the new cube
-        //var TRenderer = RotorT.GetComponent<Material>();        
+        //var TRenderer = RotorT.GetComponent<Material>();
     }
 
     //public float droneMass = ourDrone.GetComponent<Rigidbody>().Mass;
@@ -116,7 +116,7 @@ public class TYGHmovement : MonoBehaviour
 
     private float tiltAmountForward = 0;
     private float tiltVelocityForward;
-    
+
     void MovementForwardBackward()
     {
         ourDrone.AddRelativeForce(Vector3.forward * movementSpeed * movementY);
@@ -160,17 +160,17 @@ public class TYGHmovement : MonoBehaviour
                 upForce = 98f;
                 break;
             case 1:
-                upForce = 140f;
+                upForce = 240f;
                 break;
             case 2:
                 ourDrone.velocity = new Vector3(ourDrone.velocity.x, Mathf.Lerp(ourDrone.velocity.y, 0, Time.deltaTime * 5), ourDrone.velocity.z);
-                upForce = 190f;
+                upForce = 490f;
                 break;
             case 3:
-                upForce = 135f;
+                upForce = 335f;
                 break;
             case 4:
-                upForce = 250f;
+                upForce = 550f;
                 break;
         }
     }
