@@ -3145,6 +3145,10 @@ PrefabInstance:
       value: Helipad
       objectReference: {fileID: 0}
     - target: {fileID: 4794923863533025407, guid: 96f6e297804e286b59877de4348bae70, type: 3}
+      propertyPath: index
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794923863533025407, guid: 96f6e297804e286b59877de4348bae70, type: 3}
       propertyPath: levlo
       value: 
       objectReference: {fileID: 361954332}
@@ -21589,7 +21593,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1617267369}
-  m_LocalRotation: {x: 0.6794496, y: 0.0000001430934, z: -0.00000013250892, w: 0.7337222}
+  m_LocalRotation: {x: 0.6794496, y: -0.00000007046787, z: 0.00000006525544, w: 0.73372215}
   m_LocalPosition: {x: 0.04, y: 17.77, z: -80.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -22457,7 +22461,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667535422}
-  m_LocalRotation: {x: 0.6794496, y: 0.0000001430934, z: -0.00000013250892, w: 0.7337222}
+  m_LocalRotation: {x: 0.6794496, y: -0.00000007046787, z: 0.00000006525544, w: 0.73372215}
   m_LocalPosition: {x: 0.04, y: 17.77, z: -80.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

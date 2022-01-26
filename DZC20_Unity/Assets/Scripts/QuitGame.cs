@@ -9,7 +9,7 @@ public class QuitGame : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Q)){
-            levlo.LevelLoad(0);
+            levlo.LevelLoad(1);
         }
     }
 }

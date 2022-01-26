@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 6a841dc26d6eafbe7b3f1db410ce0df3
+  - enabled: 1
     path: Assets/Scenes/Tue_model.unity
     guid: 576536e3a441af444b48c163f658d515
   - enabled: 1
@@ -14,9 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Meta_Level.unity
     guid: 2464122d301612ce0a94be4edf4afefb
-  - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: 6a841dc26d6eafbe7b3f1db410ce0df3
   - enabled: 1
     path: Assets/Scenes/Circuit.unity
     guid: 5f451b139b8838b4b90e004bd2f1a544

@@ -135,7 +135,7 @@ public class CameraSwitch : MonoBehaviour
             // Enable Next Camera
             cameras[levelIndex].enabled = true;
         } else {
-            levlo.LevelLoad(0);
+            levlo.LevelLoad(1);
         }
 
     }

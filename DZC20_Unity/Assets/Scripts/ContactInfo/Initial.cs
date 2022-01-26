@@ -12,6 +12,7 @@ public class Initial : MonoBehaviour
     private bool inside;
     private bool visited;
     static bool created = false;
+    private bool first = true;
 
     void Awake()
     {
@@ -42,7 +43,10 @@ public class Initial : MonoBehaviour
     {
         if (inside && !visited){
             // freeze time
-            Time.timeScale = 0;
+            if(first){
+                StartCoroutine(freeze());
+                first = false;
+            }
 
             if (messageIndex < messages.Length){
                 text.text = messages[messageIndex];
@@ -68,5 +72,11 @@ public class Initial : MonoBehaviour
     void OnTriggerExit(Collider collider)
     {
         inside = false;
+    }
+
+    IEnumerator freeze()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Time.timeScale = 0;
     }
 }
