@@ -15,6 +15,10 @@ public class TYGHmovement : MonoBehaviour
         imgagePressed_G.enabled = false;
         imgagePressed_U.enabled = false;
         imgagePressed_J.enabled = false;
+        imgageReleased_T.enabled = true;
+        imgageReleased_G.enabled = true;
+        imgageReleased_U.enabled = true;
+        imgageReleased_J.enabled = true;
 
         //Get the Renderer component from the new cube
         //var TRenderer = RotorT.GetComponent<Material>();
@@ -37,6 +41,10 @@ public class TYGHmovement : MonoBehaviour
     public RawImage imgagePressed_G;
     public RawImage imgagePressed_U;
     public RawImage imgagePressed_J;
+    public RawImage imgageReleased_T;
+    public RawImage imgageReleased_G;
+    public RawImage imgageReleased_U;
+    public RawImage imgageReleased_J;
 
 
     void FixedUpdate()
@@ -74,11 +82,13 @@ public class TYGHmovement : MonoBehaviour
             NumberOfRotorsActive += 1;
             RotorT.transform.Rotate(0f, PropSpeedIncrease * PropSpeed * Time.fixedDeltaTime, 0f, Space.Self);
             imgagePressed_T.enabled = true;
+            imgageReleased_T.enabled = false;
             //RotorT.color = Color.blue;
         }
         else  {
             RotorT.transform.Rotate(0f, PropSpeed * Time.fixedDeltaTime, 0f, Space.Self);
             imgagePressed_T.enabled = false;
+            imgageReleased_T.enabled = true;
         }
     }
 
@@ -92,10 +102,12 @@ public class TYGHmovement : MonoBehaviour
             NumberOfRotorsActive += 1;
             RotorY.transform.Rotate(0f, -1 * PropSpeedIncrease * PropSpeed * Time.fixedDeltaTime, 0f, Space.Self);
             imgagePressed_U.enabled = true;
+            imgageReleased_U.enabled = false;
         }
         else {
             RotorY.transform.Rotate(0f, -1 * PropSpeed * Time.fixedDeltaTime, 0f, Space.Self);
             imgagePressed_U.enabled = false;
+            imgageReleased_U.enabled = true;
         }
     }
 
@@ -109,10 +121,12 @@ public class TYGHmovement : MonoBehaviour
             NumberOfRotorsActive += 1;
             RotorG.transform.Rotate(0f, PropSpeedIncrease * -1 * PropSpeed * Time.fixedDeltaTime, 0f, Space.Self);
             imgagePressed_G.enabled = true;
+            imgageReleased_G.enabled = false;
         }
         else {
             RotorG.transform.Rotate(0f, -1 * PropSpeed * Time.fixedDeltaTime, 0f, Space.Self);
             imgagePressed_G.enabled = false;
+            imgageReleased_G.enabled = true;
         }
     }
 
@@ -126,10 +140,12 @@ public class TYGHmovement : MonoBehaviour
             NumberOfRotorsActive += 1;
             RotorH.transform.Rotate(0f, PropSpeedIncrease * PropSpeed * Time.fixedDeltaTime, 0f, Space.Self);
             imgagePressed_J.enabled = true;
+            imgageReleased_J.enabled = false;
         }
         else {
             RotorH.transform.Rotate(0f, PropSpeed * Time.fixedDeltaTime, 0f, Space.Self);
             imgagePressed_J.enabled = false;
+            imgageReleased_J.enabled = true;
         }
     }
 
