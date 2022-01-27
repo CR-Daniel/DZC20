@@ -1305,7 +1305,11 @@ MonoBehaviour:
   interact: {fileID: 1604041437}
   text: {fileID: 2066016603}
   messages:
-  - You found Traverse!
+  - "\u201CYou found uhhh\u2026. Yes\u2026 good question\u2026 I think this is Traverse."
+  - "This is a building that does all sort of things, but you probably won\u2019t
+    interact with it a lot. At least you know where it is located and what it is
+    called."
+  - "This means that we also can\u2019t do anything here right now\u201D"
 --- !u!64 &30694483
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1477,7 +1481,14 @@ MonoBehaviour:
   interact: {fileID: 1604041437}
   text: {fileID: 2066016603}
   messages:
-  - You found Matrix!
+  - "\u201CThis little building is called Matrix."
+  - "It is quite an old building, aging back to 1965, but it doesn\u2019t show. This
+    building has been renovated and is now being used by the EPC, the equipment &
+    Prototype Center."
+  - You could say that I was born there, you can even find an older brother of mine
+    near the entrance. Apart from that you can also work on your projects in Innovation
+    Space, located on the top floor.
+  - "Can\u2019t do anything here at the moment, so let\u2019s go\u201D"
 --- !u!65 &33705274
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8202,7 +8213,11 @@ MonoBehaviour:
   interact: {fileID: 1604041437}
   text: {fileID: 2066016603}
   messages:
-  - You found Luna!
+  - "\u201CHere we find Luna, the student home of this campus. "
+  - This newly renovated building houses 430 living spaces for students and employees
+    on campus. It is also here where you can find students getting some lunch or
+    snacks at the small supermarket inside.
+  - "There is no use for me, uhh, us being here, let\u2019s move on!\u201D"
 --- !u!64 &281170060
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10782,7 +10797,15 @@ MonoBehaviour:
   interact: {fileID: 1604041437}
   text: {fileID: 2066016603}
   messages:
-  - You found Laplace!
+  - "\u201CYes, this is Laplace. Soon to be named Neuron after renovations will have
+    finished."
+  - 'It will be called Neuron as a reference to actual neurons, a basic element of
+    a brain. Maybe I will get some more intelligence from here someday. '
+  - "It will house the Eindhoven Artificial Intelligence System Institute. Quite
+    a mouth full, but then again I don\u2019t have a mouth hahahaha. "
+  - The goal is that the building will be finished ahead of next school year. So
+    have a look when you might visit us for real in the future.
+  - "So nothing left for us here to do\u201D"
 --- !u!64 &363738465
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13489,7 +13512,19 @@ MonoBehaviour:
   interact: {fileID: 1604041437}
   text: {fileID: 2066016603}
   messages:
-  - You found Auditorium!
+  - "\u201CHey this building is called Auditorium! Its one of the main lecture buildings
+    on campus and probably one of the first buildings you get to see when getting
+    to this campus."
+  - 'It is one of the oldest and toughest buildings on campus being opened way back
+    in 1966 and having endured a devastating fire in 1995. '
+  - But since then it has become somewhat related to me with the design of the new
+    floor being based on a printed circuit board.
+  - It is quite an influential building with a lot of inspirational and well known
+    speakers taking the stage and sharing their knowledge and visions still to this
+    day.
+  - "Not only that, for the initial construction of this building the river Dommel
+    had to make way. That must mean something.\u201D "
+  - "There is nothing else to it at the moment, let\u2019s move on!\u201D"
 --- !u!65 &454829432
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14174,7 +14209,15 @@ MonoBehaviour:
   interact: {fileID: 1604041437}
   text: {fileID: 2066016603}
   messages:
-  - You found Atlas!
+  - "\u201CHey you found Atlas! Atlas is the main building of the TU/e and it houses
+    the departments of Industrial Design, Industrial Engineering and many others."
+  - I really like this building as it is really smart, just like me hehehe.
+  - 'It has an automated system that keeps the building warm or cool depending on
+    the weather by autonomously opening and closing the windows that are all around
+    this enormous building. '
+  - This contributes to making it the most sustainable education building worldwide
+  - "If you haven\u2019t been inside yet, let\u2019s go in! entrance is to the side
+    on the glowing helipad.\u201D"
 --- !u!64 &471328267
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16434,7 +16477,10 @@ MonoBehaviour:
   interact: {fileID: 1604041437}
   text: {fileID: 2066016603}
   messages:
-  - You found Cascade!
+  - "\u201CA unique looking building, called Cascade."
+  - This building houses a wind tunnel as well as some labs. You might interact with
+    it if you choose to be part of the physics department.
+  - "But I don\u2019t like wind, so let\u2019s get out of here\u201D"
 --- !u!65 &571208281
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18791,7 +18837,10 @@ MonoBehaviour:
   interact: {fileID: 1604041437}
   text: {fileID: 2066016603}
   messages:
-  - You found Differ!
+  - "\u201CThis is Differ. It is the new home of the Dutch Institute For Fundamental
+    Energy Research. "
+  - Here they will do research on new sustainable fuel and energy technology.
+  - "But I have my own batteries, so let\u2019s move on before they run out\u201D"
 --- !u!65 &631549400
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21915,7 +21964,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714582637}
-  m_LocalRotation: {x: 0.21169959, y: -0.000000018801302, z: 0.0000000040725325, w: 0.9773348}
+  m_LocalRotation: {x: 0.21169959, y: 0.0000000188013, z: -0.000000004072532, w: 0.9773348}
   m_LocalPosition: {x: 47.095, y: 1.5486953, z: 54.401974}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -24844,7 +24893,18 @@ MonoBehaviour:
   interact: {fileID: 1604041437}
   text: {fileID: 2066016603}
   messages:
-  - You found Flux!
+  - "\u201CThis is Flux. Home to the departments of Electrical Engineering and applied
+    physics."
+  - If you get to be here on a regular basis, it probably means that you are pretty
+    smart.
+  - 'It is also one of the newer buildings on campus, being built over the period
+    of 2013 to 2014. '
+  - As it is housing the electrical engineering department it must live up the highest
+    standards of electricity consumption, and so it does.
+  - The building is a test environment for new sustainable technologies and houses
+    an astonishing 300m^2 of solar panels.
+  - "If you haven\u2019t been inside yet, enter through the helipad in front of the
+    building!\u201D"
 --- !u!64 &813885991
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26441,7 +26501,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 59.0117, y: -16.8862}
+  m_AnchoredPosition: {x: 59.01169, y: -16.88617}
   m_SizeDelta: {x: 118.0235, y: 33.7724}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &865742021
@@ -30448,7 +30508,17 @@ MonoBehaviour:
   interact: {fileID: 1604041437}
   text: {fileID: 2066016603}
   messages:
-  - You found Gemini!
+  - "\u201CThis is Gemini, also one of the older buildings on campus. But don\u2019t
+    let the age and the looks of the building fool you, this is one of the most exciting
+    buildings there is on campus. "
+  - Housing both Biomedical Engineering and Mechanical Engineering, a few of our
+    exciting student teams are located here as well.
+  - 'It is here that my friends of Tech United and their robots train and prepare
+    for the annual world championship. Not only that, it also hosts the automotive
+    lab. '
+  - Take a good look at its current state, as it will be renovated over the next
+    couple years to get up to date to the new high standards of our campus.
+  - "There is nothing else to it at the moment, lets move on!\u201D"
 --- !u!64 &996150255
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -45459,7 +45529,20 @@ MonoBehaviour:
   interact: {fileID: 1604041437}
   text: {fileID: 2066016603}
   messages:
-  - You found Vertigo!
+  - "\u201CAh yes, Vertigo. "
+  - This is one of the tallest buildings you can find here on campus and is probably
+    the first building you notice when arriving at the campus. The building houses
+    the department of the Build Environment.
+  - This is reflected by the exterior of the building that is covered in a green
+    energy-saving curtain wall that yields an energy saving of 50%.
+  - In this curtain you could see a reference to the scaffolding of the Sagrada Familia.
+    This is supposed to reflect the nature of the building as well as the mind of
+    the students in it, which is in the process of being build up.
+  - 'With knowledge of course. '
+  - As it is the face of the campus it also wears the logo on top as a crown. This
+    is really cool because at night you can see different lighting effects created
+    by the logo. This is of course a must in the city of lights.
+  - "Can\u2019t fix anything here, let\u2019s explore more!\u201D"
 --- !u!64 &1465405899
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -51680,7 +51763,15 @@ MonoBehaviour:
   interact: {fileID: 1604041437}
   text: {fileID: 2066016603}
   messages:
-  - You found Metaforum!
+  - "\u201CYes, this is Metaforum. One of the iconic buildings of our campus. "
+  - With its location at the center of our campus it is the beating heart of knowledge,
+    connecting all sides of the campus together.
+  - 'It hosts a large number of departments, including computer science. '
+  - "Not only that, it is also here in the library where you can find stressed students
+    uploading the data from our courses to their human \u2018hard drives\u2019 in
+    the days leading up to the exam period."
+  - "If you haven\u2019t been inside yet, enter through the helipad on top of the
+    building!\u201D"
 --- !u!64 &1676229223
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -52283,7 +52374,15 @@ MonoBehaviour:
   interact: {fileID: 1604041437}
   text: {fileID: 2066016603}
   messages:
-  - You found Helix!
+  - "\u201CAhh.. \u2026Helix. The building shaped like an H, hahahahah. "
+  - "Normally jou wouldn\xFD really notice it, but that is the advantage of being
+    a drone. The name refers to the structure of DNA, the double Helix."
+  - "It\u2019s then also no coincidence that it houses the departments of Chemical
+    Engineering and Chemistry. I t conducts groundbreaking research in the field
+    of polymers and other materials."
+  - The department has extensive laboratory facilities, divided over some 12,000
+    m2.
+  - "But there is no DNA in me to be fixed, so let\u2019s get going again\u201D"
 --- !u!65 &1705721051
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61887,7 +61986,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2022258518}
-  m_LocalRotation: {x: 0.21169959, y: -0.000000018801302, z: 0.0000000040725325, w: 0.9773348}
+  m_LocalRotation: {x: 0.21169959, y: 0.0000000188013, z: -0.000000004072532, w: 0.9773348}
   m_LocalPosition: {x: 47.095, y: 1.5486953, z: 54.401974}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -64817,7 +64916,15 @@ MonoBehaviour:
   interact: {fileID: 1604041437}
   text: {fileID: 2066016603}
   messages:
-  - Finally! Mometum!
+  - "\u201CAh yes, home."
+  - I mean Momentum, that probably makes more sense to you.
+  - 'This building contains the headquarters of Team BlueJay, my friends that brought
+    me to live. '
+  - 'It is located at quite some distance from the center of the campus, but that
+    does not create a problem for me, I just fly over here. '
+  - "Just have to make sure to not run out of charge\u2026 or crash\u2026.."
+  - When you get to visit us for real one, swing by and take a close look at me,
+    because as a prototype my appearance and features change a lot."
 --- !u!65 &2105876853
 BoxCollider:
   m_ObjectHideFlags: 0

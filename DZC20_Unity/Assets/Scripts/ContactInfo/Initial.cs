@@ -31,11 +31,18 @@ public class Initial : MonoBehaviour
     {
         box.SetActive(false);
         messages = new string[] {
-            "1",
-            "2",
-            "3",
-            "...",
-            "5"
+            "Hey!",
+            "Hey there! Yeah you. Over here, next to the billboard.",
+            "Yes you are listening to a drone, a talking drone actually.",
+            "Whay am I talking to you? I wanted to be the first one to introduce you to the campus and flew all the way over here.",
+            "So let me indroduce myself. My name is AutonomousFlyingDrone.beta(MightBeSketchy)",
+            "But you can call me Jay.",
+            "You seem hesitant. Come on. It will be fine.",
+            "I am a drone, I can't do you anything.",
+            "Come on, let me introduce you to the campus, this will be fun!",
+            "One small problem...",
+            "You need to control me. You can find the controls on the billboard. Let's give it a go"
+
         };
     }
 
