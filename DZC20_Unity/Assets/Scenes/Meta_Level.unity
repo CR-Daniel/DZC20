@@ -39471,7 +39471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7578579019721611828, guid: 4a85545ea95338fa2879b65f9e4df7ba, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7578579020049792585, guid: 4a85545ea95338fa2879b65f9e4df7ba, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
@@ -43000,7 +43000,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807072067}
-  m_LocalRotation: {x: 0.26699147, y: -0.65476376, z: 0.26699147, w: 0.6547637}
+  m_LocalRotation: {x: 0.2669915, y: -0.65476376, z: 0.26699153, w: 0.6547637}
   m_LocalPosition: {x: 139.48048, y: 21.740002, z: 0.080000654}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -44123,7 +44123,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1860352630}
-  m_LocalRotation: {x: 0.26699147, y: -0.65476376, z: 0.26699147, w: 0.6547637}
+  m_LocalRotation: {x: 0.2669915, y: -0.65476376, z: 0.26699153, w: 0.6547637}
   m_LocalPosition: {x: 139.48048, y: 21.740002, z: 0.080000654}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
