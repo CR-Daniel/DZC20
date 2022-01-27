@@ -98,7 +98,7 @@ public class DroneMovementScript : MonoBehaviour
     }
 
     //--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    private float movementForwardSpeed = 15f;        //change this float to change the speed of the drone, the higher the number, the faster the drone goes (must be positive)
+    [SerializeField] private float movementForwardSpeed = 15f;        //change this float to change the speed of the drone, the higher the number, the faster the drone goes (must be positive)
     private float tiltAmountForward = 0;                //tilt angle of the drone for moving forward in stationary mode (should stay at 0)
     private float tiltVelocityForward;                  //float used in the function below
     void MovementForward()      //function that controles the forward/backward translation of the drone
@@ -128,7 +128,7 @@ public class DroneMovementScript : MonoBehaviour
     }
 
     //--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    private float wantedYRotation;      //stores the desired rotation of the drone around it's centre (Y) axis
+    [SerializeField] float wantedYRotation;      //stores the desired rotation of the drone around it's centre (Y) axis
     public float currentYRotation;     //stores the current rotation of the drone around it's centre (Y) axis
     private float rotateAmountByKeys = 1.5f;    //changes the amount of rotation the drone makes around it's centre (Y) axis
     private float rotationYVelocity;    //stores the velocity of the drone's rotation around it's centre (Y) axis
