@@ -25,8 +25,8 @@ Course: Design for Games & Play II
 <br />
 
 <div>Meta Logic Gate Levels 1 and 4</div>
-<img src="docs/meta1.png" width="500" height="auto">
-<img src="docs/meta2.png" width="700" height="auto">
+<img src="docs/meta1.png" width="600" height="auto">
+<img src="docs/meta2.png" width="600" height="auto">
 
 <br />
 
